@@ -1,13 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false" pageEncoding="UTF-8"%>
 <%@page import="com.example.board.BoardDAO, com.example.board.BoardVO,java.util.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>교수위키</title>
+	<link rel="stylesheet" type="text/css" href="your_stylesheet.css" charset="UTF-8">
 	<style>
 		body {
 			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -86,7 +85,7 @@
 	</tr>
 	<c:forEach items="${list}" var="u">
 		<tr>
-			<td><img src="path/to/professor_image.jpg" alt="교수님 사진"></td>
+			<td><img src="${u.getImage_path()}" alt="교수님 사진"></td>
 			<td>${u.getName()}</td>
 			<td><a href="view/${u.seq}">View</a></td>
 			<td><a href="editform/${u.getSeq()}">Edit</a></td>

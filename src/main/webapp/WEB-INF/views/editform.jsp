@@ -1,8 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false" pageEncoding="UTF-8"%>
-<%@page import="com.example.board.BoardDAO, com.example.board.BoardVO"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Edit</title>
@@ -28,6 +27,7 @@
 <tr><td>Office_Hour:</td><td><form:input path="office_hour"/></td></tr>
 <tr><td>Tip:</td><td><form:input path="tip"/></td></tr>
 <tr><td>Writer:</td><td><form:input path="writer"/></td></tr>
+<tr><td>Image_path:</td><td><form:input path="image_path"/></td></tr>
 <tr><td colspan="2">
 
 </table>

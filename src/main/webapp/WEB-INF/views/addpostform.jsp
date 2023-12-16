@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Information</title>
@@ -28,6 +29,7 @@
 <tr><td>Office_Hour:</td><td><input type="text" name="office_hour"></td></tr>
 <tr><td>Tip:</td><td><input type="text" name="tip"></td></tr>
 <tr><td>Writer:</td><td><input type="text" name="writer"></td></tr>
+<tr><td>Image_path:</td><td><input type="text" name="image_path"></td></tr>
 </table>
     <button type="button" onclick="location.href='list'">View All Records</button>
     <button type="submit">Add Post</button>
